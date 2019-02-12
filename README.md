@@ -6,6 +6,13 @@
 
 This program will require you to create a program that will allow faculty members to post their course and office hour schedules.
 
+## Git and GitHub
+
+You will submit this project using GitHub pull requests. You **must** create a GitHub pull request for each level to receive credit. You should request your assigned reviewer on your pull request. Review the following resource on git and GitHub for major programs _before_ you start work:
+
+- [Written Explanation](https://gist.github.com/ccannon94/511115be821a873ae9ec5f4db9cfdda0)
+- [YouTube Video](https://www.youtube.com/watch?v=l2bP9JKQkdA)
+
 ## Enumeration
 
 First of all, this project utilizes enumerated types which help your program’s readability. Here is an example:
@@ -100,7 +107,7 @@ The format of the output file is the same as the input file. If you have created
 
 ## Grading
 
-You must create a driver program (`main()` method) for each level that demonstrates that the all the functionality of that level works correctly.
+You must create a driver program (`main()` method) for each level that demonstrates that the all the functionality of that level works correctly. You must push your work to GitHub and open a GitHub pull request for EACH level.
 
 ### Level 1: 25 points
 Complete the `DaysOfWeek` enumerated type, the `TimeBlock` class, the `Course` class and the `Appointment` class. Write a simple driver program that will instantiate an object of each class type, populate the data fields and test the other methods of the classes. Display your output in a `JavaFX Dialog`.
