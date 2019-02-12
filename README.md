@@ -79,22 +79,35 @@ The input file will be supplied to your `main()` method using command-line argum
 
 ```
 Department Name
-Unit Name
+College Name
 University Name
-Faculty0 First Name | Last Name Faculty0 Office Location Faculty0 Number of Courses Course0 Name
+Faculty0 First Name
+Faculty0 Last Name
+Faculty0 Office Location
+Faculty0 Number of Courses
+Course0 Name
 Course0 Location
 Course0 Number of meeting days
 Course0 Day of the week Start_Time End_Time
 * repeat for other days
 * repeat for other courses
 Faculty0 Number of office hour sessions
-Office Hours0 Day of the week Start_Time End_Time * Repeat for other office hours.
+Office Hours0 Day of the week
+Start_Time
+End_Time
+* Repeat for other office hours.
 Faculty0 Number of Appointments
 Appointments0 Description
-Appointments0 Day of the week Start_Time End_Time * Repeat for other appointments.
+Appointments0 Day of the week
+Start_Time
+End_Time
+* Repeat for other appointments.
 *Repeat for other faculty
-End-of-File will let you know that there are no more faculty.
+
+The file will end when there are no more faculty.
 ```
+
+You should also reference the input file provided in this repository.
 
 ## Notes
 
