@@ -32,24 +32,24 @@ String value = firstDayOfWeek.name();
 
 Here are the UML Class Diagrams for the classes you must implement in Java. You are free to add additional private methods if needed.
 
-![TimeBlock UML Diagram]()
+![TimeBlock UML Diagram](https://github.com/NCATCS/Spring2019-MP1/blob/master/images/TimeBlock.png)
 
 The method `getFormatedTimeBlock()` should return a string in the following format:
 ```
 startTime - endTime comments location (e.g. 1200 - 1300 COMP167 ACB 207 )
 ```
 
-![Appointment UML Diagram]()
+![Appointment UML Diagram](https://github.com/NCATCS/Spring2019-MP1/blob/master/images/Appointment.png)
 
 The method `getFormatedTimeBlocks()` will return a string with a tab character (i.e. `\t`) preceding each formatted TimeBlock (use the `getFormatedTimeBlock()` method and a line separator character between each formatted `TimeBlock` that matches the given day and time.
 
-![Course UML Diagram]()
+![Course UML Diagram](https://github.com/NCATCS/Spring2019-MP1/blob/master/images/Course.png)
 
-![Faculty UML Diagram]()
+![Faculty UML Diagram](https://github.com/NCATCS/Spring2019-MP1/blob/master/images/Faculty.png)
 
 The method `getCalendar()` should return all course items, office hour items and appointment items. Each item (i.e. formatted `TimeBlock`) should be listed under a heading with the day of the week. Within a particular day, the items should be listed in sorted order by time (Hint: Sorting is not necessary -- use a loop that goes from 5 to 2400 by 5's.).
 
-![Department UML Diagram]()
+![Department UML Diagram](https://github.com/NCATCS/Spring2019-MP1/blob/master/images/Department.png)
 
 ## The toString() method
 
