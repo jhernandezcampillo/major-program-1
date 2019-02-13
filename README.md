@@ -15,7 +15,7 @@ You will submit this project using GitHub pull requests. You **must** create a G
 
 You **must** complete all work on a separate branch. You CAN NOT push code to the master branch. Review the above git and GitHub resources to learn about branching.
 
-You **must** add your assigned TA as a reviewer for your pull requests. You can find your assigned reviewer [here](../assigned-reviewers.csv)
+You **must** add your assigned TA as a reviewer for your pull requests. You can find your assigned reviewer [here](./assigned-reviewers.csv).
 
 ## Enumeration
 
