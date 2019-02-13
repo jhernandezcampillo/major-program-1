@@ -13,6 +13,8 @@ You will submit this project using GitHub pull requests. You **must** create a G
 - [Written Explanation](https://gist.github.com/ccannon94/511115be821a873ae9ec5f4db9cfdda0)
 - [YouTube Video](https://www.youtube.com/watch?v=l2bP9JKQkdA)
 
+You **must** complete all work on a separate branch. You CAN NOT push code to the master branch. Review the above git and GitHub resources to learn about branching.
+
 ## Enumeration
 
 First of all, this project utilizes enumerated types which help your program’s readability. Here is an example:
