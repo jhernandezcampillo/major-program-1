@@ -26,6 +26,11 @@ public class MajorProgram1 {
         
         System.out.print(b.toString());
         
+        Course c = new Course();
+        
+        System.out.print(c.toString());
+        
+        
     }
     
 }
