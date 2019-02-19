@@ -5,6 +5,10 @@
  */
 package majorprogram1;
 
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Judith
@@ -30,7 +34,14 @@ public class MajorProgram1 {
         
         System.out.print(c.toString());
         
-        
+       /* Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("Info");
+
+        alert.showAndWait();
+       */
+       JOptionPane.showMessageDialog(null, c.toString());
     }
     
 }
