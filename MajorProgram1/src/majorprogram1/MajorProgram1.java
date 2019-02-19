@@ -19,8 +19,12 @@ public class MajorProgram1 {
         
         TimeBlock a = new TimeBlock();
         
-        System.out.print(a.toString());
         System.out.print(a.getFormatedTimeBlock());
+        System.out.print(a.toString());
+        
+        Appointment b = new Appointment();
+        
+        System.out.print(b.toString());
         
     }
     
