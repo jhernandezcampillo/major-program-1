@@ -16,6 +16,12 @@ public class MajorProgram1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        TimeBlock a = new TimeBlock();
+        
+        System.out.print(a.toString());
+        System.out.print(a.getFormatedTimeBlock());
+        
     }
     
 }

@@ -96,7 +96,7 @@ public class TimeBlock {
     
     public String getFormatedTimeBlock(){
         String formTime ="";
-        formTime += startTime + " - "+ endTime + comments+ location;
+        formTime += startTime + " - "+ endTime +" "+ comments + " "+ location;
         return formTime; 
     }
     public String toString(){
