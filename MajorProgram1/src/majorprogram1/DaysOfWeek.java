@@ -11,7 +11,7 @@ package majorprogram1;
  */
 public enum DaysOfWeek {
    
-    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+    Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday;
     
     
 }

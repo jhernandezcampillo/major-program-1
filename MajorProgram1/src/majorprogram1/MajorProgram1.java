@@ -5,6 +5,8 @@
  */
 package majorprogram1;
 
+import java.io.File;
+import java.util.Scanner;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javax.swing.JOptionPane;
@@ -24,7 +26,7 @@ public class MajorProgram1 {
         TimeBlock a = new TimeBlock();
         a.setStartTime(1000);
         a.setEndTime(1200);
-        a.setDay(DaysOfWeek.TUESDAY);
+        a.setDay(DaysOfWeek.Tuesday);
         a.setLocation("McNair 213");
         
 
@@ -47,11 +49,11 @@ public class MajorProgram1 {
         f.addTimeBlock(a);
         f.addAppointment(b);
        
-        Department d = new Department();
-        d.setDepartmentName("Comp Sci Dep");
-        d.setUnitName("College of Engineering");
-        d.setUniversityName("A&T");
-        d.addFaculty(f);
+        //Department d = new Department();
+        //d.setDepartmentName("Comp Sci Dep");
+        //d.setUnitName("College of Engineering");
+        //d.setUniversityName("A&T");
+        //d.addFaculty(f);
         
        /* Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
@@ -60,11 +62,19 @@ public class MajorProgram1 {
 
         alert.showAndWait();
        */
-       JOptionPane.showMessageDialog(null, a.toString());
-       JOptionPane.showMessageDialog(null, b.toString());
-       JOptionPane.showMessageDialog(null, c.toString());
-       JOptionPane.showMessageDialog(null, f.toString());
-       JOptionPane.showMessageDialog(null, d.toString());
+       //JOptionPane.showMessageDialog(null, a.toString());
+       //JOptionPane.showMessageDialog(null, b.toString());
+       //JOptionPane.showMessageDialog(null, c.toString());
+       //JOptionPane.showMessageDialog(null, f.toString());
+       //JOptionPane.showMessageDialog(null, d.toString());
+       
+       String file = args[0];
+       Department de = new Department();
+       de.loadDepartmentData(file);
+       //JOptionPane.showMessageDialog(null, de.toString());
+       de.saveDepartmentData("outTest.txt");
+
+       
     }
     
 }
