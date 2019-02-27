@@ -118,6 +118,20 @@ public class Faculty {
         return appointments.remove(index);
     }
     
+    public String getCalendar(){
+        String n = System.lineSeparator();
+        String show  = "Calandar for " + firstName+ lastName+ n;
+        for(DaysOfWeek day: DaysOfWeek.values()){
+            show += day + n;
+            for(int i = 5; i<2400; i += 5){
+                for(int j=0; j< getNumCourses(); j++){
+                    Course c = getCourse(j);
+                    for(int k = 0; k < c.)
+                    
+                }
+            }
+        }
+    }
     @Override 
     public String toString(){
         String nl = System.lineSeparator();
