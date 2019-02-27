@@ -29,7 +29,7 @@ public class MajorProgram1 {
         
 
         Appointment b = new Appointment();
-        b.setDescription("Code Example");
+        b.setDescription("Code Appt");
         b.setTimeBlock(a);
         
 
@@ -38,6 +38,14 @@ public class MajorProgram1 {
         c.addTimeBlock(a);
         c.setCourseName("Comp 167");
         c.setLocation("Cherry 111");
+        
+        Faculty f = new Faculty();
+        f.setFirstName("Jay");
+        f.setLastName("Juice");
+        f.setOfficeLocation("SpaceJam");
+        f.addCourse(c);
+        f.addTimeBlock(a);
+        f.addAppointment(b);
        
         
        /* Alert alert = new Alert(AlertType.INFORMATION);
@@ -50,7 +58,7 @@ public class MajorProgram1 {
        JOptionPane.showMessageDialog(null, a.toString());
        JOptionPane.showMessageDialog(null, b.toString());
        JOptionPane.showMessageDialog(null, c.toString());
-       
+       JOptionPane.showMessageDialog(null, f.toString());
     }
     
 }

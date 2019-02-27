@@ -117,4 +117,24 @@ public class Faculty {
     public Appointment removeAppointment(int index){
         return appointments.remove(index);
     }
+    
+    @Override 
+    public String toString(){
+        String nl = System.lineSeparator();
+        String out = firstName + nl + lastName + nl + officeLocation +nl + getNumCourses() + nl;
+        
+        for(int i = 0; i <courses.size();i++){
+            out += courses.get(i).toString();   
+        }
+        out += getNumOfficeHours() + nl;
+        
+        for(int i = 0; i < officeHours.size(); i++){
+            out += officeHours.get(i).toString();
+        }
+        out += getNumAppointments() + nl;
+        for(int i = 0; i < appointments.size(); i++){
+            out += appointments.get(i).toString();
+        }
+        return out;
+    }
 }
