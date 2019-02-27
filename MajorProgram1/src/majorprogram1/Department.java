@@ -82,9 +82,9 @@ public class Department {
         return faculty.remove(index);
     }
     
-    public String atAGlance(int time){
-       String oof = "";
-       return oof;
+    public String atAGlance(DaysOfWeek day, int time){
+       String glance = "";
+       return glance;
        
     }
     @Override
