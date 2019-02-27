@@ -47,6 +47,11 @@ public class MajorProgram1 {
         f.addTimeBlock(a);
         f.addAppointment(b);
        
+        Department d = new Department();
+        d.setDepartmentName("Comp Sci Dep");
+        d.setUnitName("College of Engineering");
+        d.setUniversityName("A&T");
+        d.addFaculty(f);
         
        /* Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
@@ -59,6 +64,7 @@ public class MajorProgram1 {
        JOptionPane.showMessageDialog(null, b.toString());
        JOptionPane.showMessageDialog(null, c.toString());
        JOptionPane.showMessageDialog(null, f.toString());
+       JOptionPane.showMessageDialog(null, d.toString());
     }
     
 }

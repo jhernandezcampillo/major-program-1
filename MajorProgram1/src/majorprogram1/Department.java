@@ -66,7 +66,7 @@ public class Department {
         this.universityName = universityName;
     }
         
-    public int getFaculty(){
+    public int getNumFaculty(){
         return faculty.size();
     }
     public Faculty getFaculty(int index){
@@ -80,5 +80,20 @@ public class Department {
     }
     public Faculty removeFaculty(int index){
         return faculty.remove(index);
+    }
+    
+    public String atAGlance(int time){
+       String oof = "";
+       return oof;
+       
+    }
+    @Override
+    public String toString(){
+       String nl = System.lineSeparator();
+       String out = departmentName + nl + unitName + nl + universityName + nl + getNumFaculty() + nl;
+       for(int i = 0; i < faculty.size(); i++){
+           out += faculty.get(i).toString();
+       }
+       return out;
     }
 }
