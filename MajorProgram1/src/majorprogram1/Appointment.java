@@ -14,7 +14,7 @@ public class Appointment {
     private TimeBlock timeBlock;
     
     public Appointment(){
-        description = "x";
+        description = "";
         timeBlock = new TimeBlock ();
         
     }
@@ -45,10 +45,11 @@ public class Appointment {
     public void setTimeBlock(TimeBlock timeBlock) {
         this.timeBlock = timeBlock;
     }
-    
+    @Override 
     public String toString(){
-        String desPlay = "";
-        desPlay += description+ "\n"+ timeBlock;
-        return desPlay;
+        String nl = System.lineSeparator();
+        String c = ", ";
+        String out = description + nl + timeBlock.toString();
+        return out;
     }
 }

@@ -22,17 +22,23 @@ public class MajorProgram1 {
         // TODO code application logic here
         
         TimeBlock a = new TimeBlock();
+        a.setStartTime(1000);
+        a.setEndTime(1200);
+        a.setDay(DaysOfWeek.TUESDAY);
+        a.setLocation("McNair 213");
         
-        System.out.print(a.getFormatedTimeBlock());
-        System.out.print(a.toString());
-        
+
         Appointment b = new Appointment();
+        b.setDescription("Code Example");
+        b.setTimeBlock(a);
         
-        System.out.print(b.toString());
+
         
         Course c = new Course();
-        
-        System.out.print(c.toString());
+        c.addTimeBlock(a);
+        c.setCourseName("Comp 167");
+        c.setLocation("Cherry 111");
+       
         
        /* Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
@@ -41,7 +47,10 @@ public class MajorProgram1 {
 
         alert.showAndWait();
        */
+       JOptionPane.showMessageDialog(null, a.toString());
+       JOptionPane.showMessageDialog(null, b.toString());
        JOptionPane.showMessageDialog(null, c.toString());
+       
     }
     
 }

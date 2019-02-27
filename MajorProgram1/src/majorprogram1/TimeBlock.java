@@ -95,14 +95,14 @@ public class TimeBlock {
     }
     
     public String getFormatedTimeBlock(){
-        String formTime ="";
-        formTime += startTime + " - "+ endTime +" "+ comments + " "+ location+"\n";
-        return formTime; 
+        return startTime + " - "+ endTime +" "+ comments + " "+ location; 
     }
+    @Override 
     public String toString(){
-        String formBlock = "";
-        formBlock += day + ", " + startTime + ", "+ endTime +"\n";
-        return formBlock;
+        String c = ", ";
+        String out = day + c + startTime + c + endTime + System.lineSeparator();
+        return out;
+
     }
     
     

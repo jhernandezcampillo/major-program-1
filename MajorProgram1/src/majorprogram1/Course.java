@@ -5,7 +5,9 @@
  */
 package majorprogram1;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -17,9 +19,9 @@ public class Course {
     private  ArrayList <TimeBlock> timeBlocks;
     
     public Course(){
-        courseName = "me";
-        location = "try";
-        timeBlocks = new ArrayList<TimeBlock>();
+        courseName = "";
+        location = "";
+        timeBlocks = new ArrayList<>();
     }
 
     /**
@@ -50,23 +52,31 @@ public class Course {
         this.location = location;
     }
 
-    /**
-     * @return the timeBlocks
-     */
-    public ArrayList <TimeBlock> getTimeBlocks() {
-        return timeBlocks;
-    }
 
-    /**
-     * @param timeBlocks the timeBlocks to set
-     */
-    public void setTimeBlocks(ArrayList <TimeBlock> timeBlocks) {
-        this.timeBlocks = timeBlocks;
+    
+    public int getNumTimeBlocks(){
+        return timeBlocks.size();
     }
+    public TimeBlock getTimeBlock(int index){
+        return timeBlocks.get(index);
+    }
+    public void setTimeBlock(int index, TimeBlock item){
+        timeBlocks.set(index, item);
+    }
+    public void addTimeBlock(TimeBlock time){
+        timeBlocks.add(time);
+    }
+    public TimeBlock removeTimeBlock(int index){
+        return timeBlocks.remove(index);
+    }
+    @Override 
     
     public String toString(){
-        String show = "";
-        show += courseName+ "\n"+ location+ "\n"+timeBlocks;
-        return show;
+        String nl = System.lineSeparator();
+        String out = courseName + nl + location + nl + getNumTimeBlocks() + nl;
+        for (int i = 0; i<timeBlocks.size();i++){
+            out += timeBlocks.get(i).toString();
+        }
+        return out;
     }
 }
